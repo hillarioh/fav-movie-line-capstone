@@ -7,4 +7,21 @@ class LinesController < ApplicationController
     def index
         @lines = Line.all        
     end
+
+    def create
+        @line = current_user.lines.build(line_params)
+        if @line.save
+          flash[:success] = 'Line successfully created'
+          redirect_to lines_path
+        else
+          flash[:error] = 'Something went wrong'
+          render 'new'
+        end
+      end
+
+   
+      private
+      def line_params
+        params.require(:user).permit(:username,:fullname,:author_id)
+      end
 end
