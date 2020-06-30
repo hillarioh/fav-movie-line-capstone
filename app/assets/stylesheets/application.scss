@@ -14,3 +14,20 @@
  *= require_self
  */
  @import "bootstrap/scss/bootstrap";
+//  @import "./lines";
+ @import "./lines.scss";
+
+ aside {
+     background: rgb(33, 51, 70);
+     color: white;
+     min-height: 100vh;
+ }
+
+ .page {
+    min-height: 100vh;
+    .navb {
+        background: rgb(81, 166, 231);
+        line-height: 3rem;
+    }
+ }
+

@@ -1,3 +1,35 @@
 // Place all the styles related to the Lines controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.sect1{
+    background: rgb(245, 246, 248);
+    border-right: 2px solid #ccc;
+
+    .tab {
+        align-items: flex-end;
+        border-bottom: 1px solid #ccc;
+        .tt-lk{
+            text-decoration: none;
+            padding: 8px;
+            color: rgb(135, 141, 150);
+            font-weight: 600;
+            font-size: 20px;
+            border-bottom: 3px solid rgb(81, 166, 231);
+        }
+    }
+
+    .line-form {
+        margin: 16px;
+        padding: 16px;
+        background: white;
+        h4 {
+            font-weight: 700;
+            font-size: 16px;
+        }
+    }
+
+}
+.aside {
+    background: rgb(245, 246, 248);
+    min-height: 100vh;
+}
