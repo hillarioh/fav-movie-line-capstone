@@ -10,27 +10,33 @@
   </head>
 
   <body>
-
-  
       <% flash.each do |name,msg| %>
       <%= content_tag :div, msg, id: "flash_#{name}" %>
       <% end %>
 
-      
-      <div class="main">
-      <aside>
-       <div>Contains logged in user info</div>
-      </aside>
-          <div>
-            <%= user_actions(current_user) %>
-            <%=link_to('Home', lines_path)%>
-          </div>
-        <section>
-          <%= yield %>
-        <section>
-        <section>
-          <div>Contains logged in user info</div>
-        </section>
+      <% if current_user %>
+
+      <div class="container-fluid">
+        <div class="row">
+            <aside class="col-2">
+                <h1>Contains logged in user info</h1>
+            </aside>
+
+            <div class="page  p-0 col-10" >
+                <div class="navb w-100">
+                  <%= user_actions(current_user) %>
+                  <%=link_to('Home', lines_path)%>
+                </div>
+                <div class="row p-0 m-0">
+                      <%= yield %>
+                </div>
+              </div>
+
+        </div>
+                 
       <div>
+      <% else %>
+        <%= yield %>
+        <% end %>
   </body>
 </html>

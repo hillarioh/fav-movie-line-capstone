@@ -1,1 +1,22 @@
-<h1>all is well</h2>
+<section class="sect1 col-9 p-0">
+    <div class="d-flex tab">
+        <%= link_to 'Movie lines', lines_path, class: "tt-lk" %>    
+    </div>
+    <div class="line-form">
+        <h4>Post Your favourite movie line</h4>
+        <%= form_with model: Line.new do |f|%>
+            <div class="form-group">
+                <%= f.text_area :text, autofocus: true, autocomplete: "name" , :class=>"form-control"%>
+            </div>
+           <div class="actions">
+                <%= f.submit "Post", :class=>"btn btn-primary" %>
+            </div>
+        <%end%>
+    </div>
+    <div class="movie-lines m-2">
+    <%= render partial: 'event', collection:  @lines %>
+    </div>      
+</section>
+ <section class="aside  col-3 p-0">
+    <div>Contains logged in user info</div>
+</section>
