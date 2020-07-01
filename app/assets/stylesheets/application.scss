@@ -17,13 +17,28 @@
 //  @import "./lines";
  @import "./lines.scss";
 
+ @font-face {
+    font-family: 'Pangolin-Regular';
+    src: url("/assets/Pangolin-Regular.ttf");
+    font-family: 'Manjari-Bold';
+    src: url('../fonts/Manjari-Bold.ttf');
+    font-family: 'Manjari-Regular';
+    src: url('../fonts/Manjari-Regular.ttf');
+    font-family: 'Manjari-Thin';
+    src: url('../fonts/Manjari-Thin.ttf');
+ }
+
  aside {
      background: rgb(33, 51, 70);
      color: white;
      min-height: 100vh;
+     font-family: Pangolin-Regular;
  }
 
  .page {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
     min-height: 100vh;
     .navb {
         background: rgb(81, 166, 231);
