@@ -1,3 +1,43 @@
-// Place all the styles related to the Users controller here.
+// Place all the styles related to the Lines controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+@font-face {
+    font-family: 'Pangolin-Regular';
+    src: url('/assets/Pangolin-Regular.ttf')
+ }
+.sect1{
+    background: rgb(245, 246, 248);
+    border-right: 2px solid #ccc;
+    font-family: 'Pangolin-Regular';
+
+    
+
+    .tab {
+        align-items: flex-end;
+        border-bottom: 1px solid #ccc;
+        .tt-lk{
+            text-decoration: none;
+            padding: 8px;
+            color: rgb(135, 141, 150);
+            font-weight: 600;
+            font-size: 20px;
+            border-bottom: 3px solid rgb(81, 166, 231);
+        }
+    }
+
+    .line-form {
+        background: white;
+        h4 {
+            font-weight: 700;
+            font-size: 16px;
+        }
+    }
+
+}
+
+.sect2 {
+    background: rgb(245, 246, 248);
+    min-height: 100vh;
+    font-family: 'Pangolin-Regular';
+}
