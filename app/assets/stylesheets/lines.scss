@@ -40,4 +40,20 @@
     background: rgb(245, 246, 248);
     min-height: 100vh;
     font-family: 'Pangolin-Regular';
+
+    .tab {
+        border-bottom: 1px solid #ccc;
+        h4{
+            font-size: 12px;
+            font-weight: 800;
+            color: gray;
+            padding: 17.5px;            
+        }
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
 }
