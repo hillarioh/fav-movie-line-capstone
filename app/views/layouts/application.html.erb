@@ -19,34 +19,45 @@
       <div class="container-fluid">
         <div class="row">
             <aside class="col-2">
-              <div class="row d-flex  align-items-center p-3">
+              <div class="row d-flex  align-items-center p-3 border border-dark">
                    <%= image_tag current_user.cover_pic ,:class=> 'img-fluid'%>
                    <span class="font-weight-bold ml-2 text-muted"><%= current_user.username %></span>
               </div>
-               <div class="row px-2">
+               <div class="row lkn px-2 border border-dark">
                   <div class="col-6 d-flex flex-column align-items-center justify-content-center">
-                    <p class="m-0">10</p>
+                    <p class="m-0"><%= link_to '10', users_path %></p>
                     <p class="m-0">Following</p>
                   </div>
                   <div class="col-6 d-flex flex-column align-items-center justify-content-center">
-                    <p class="m-0">12</p>
+                    <p class="m-0"><%= link_to '12', users_path %></p>
                     <p class="m-0">Followers</p>
                   </div>
                </div>
-               <div class="row d-flex align-items-center px-3 py-2">
+               <div class="row lkn d-flex align-items-center px-3 py-2 border border-dark">
                   <i class="fa fa-home p-2" aria-hidden="true"></i>
                   <span><%= link_to 'Home', lines_path %> </span>
                </div>
-               <div class="row d-flex align-items-center px-3 py-2">
+                <div class="row lkn d-flex align-items-center px-3 py-2 border border-dark">
+                  <i class="fas fa-id-card p-2"></i>
+                  <span><%= link_to 'My Profile', edit_user_path(current_user) %> </span>
+               </div>
+               <div class="row lkn d-flex align-items-center px-3 py-2 border border-dark">
+                  <i class="fas fa-stream p-2"></i>
+                  <span><%= link_to 'My Page', user_path(current_user) %> </span>
+               </div>
+               <div class="row lkn d-flex align-items-center px-3 py-2 border border-dark">
+                  <i class="fas fa-link p-2"></i>
+                  <span><%= link_to 'Connect', users_path %> </span>
+               </div>
+               <div class="row lkn d-flex align-items-center px-3 py-2 border border-dark">
                   <i class="fas fa-sign-out-alt p-2"></i>
                   <span><%= link_to 'Log Out', logout_path%></span>
                </div>
             </aside>
 
             <div class="page  p-0 col-10" >
-                <div class="navb w-100">
-                  <%= user_actions(current_user) %>
-                  <%=link_to('Home', lines_path)%>
+                <div class="navb w-100 p-3">
+                  <h4 class="m-0">Sign out</h4>
                 </div>
                 <div class="row p-0 m-0">
                       <%= yield %>

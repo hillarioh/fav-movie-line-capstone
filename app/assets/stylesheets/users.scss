@@ -11,11 +11,21 @@
     border-right: 2px solid #ccc;
     font-family: 'Pangolin-Regular';
 
+    .tab1{
+        height: 250px;
+        overflow-y: hidden;
+        .cov{
+            width: 1000px;
+            height: 400px;
+        }
+    }
+
     
 
     .tab {
         align-items: flex-end;
         border-bottom: 1px solid #ccc;
+      
         .tt-lk{
             text-decoration: none;
             padding: 8px;

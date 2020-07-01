@@ -1,18 +1,8 @@
 <section class="sect1 col-9 p-0">
-    <div class="d-flex tab">
-        <%= link_to 'Movie lines', lines_path, class: "tt-lk" %>    
+    <div class="d-flex tab1">
+        <%= image_tag current_user.cover_pic ,:class=> 'cov'%>
     </div>
-    <div class="line-form m-3 p-3 bg-white">
-        <h4>Post Your favourite movie line</h4>
-        <%= form_with model: Line.new do |f|%>
-            <div class="form-group">
-                <%= f.text_area :text, autofocus: true, autocomplete: "name" , :class=>"form-control"%>
-            </div>
-           <div class="actions">
-                <%= f.submit "Post", :class=>"btn btn-primary" %>
-            </div>
-        <%end%>
-    </div>
+    
     <div class="movie-lines m-3 p-3 bg-white">
      <%= render partial: 'lines/line', collection:  @lines %>
     </div>      
