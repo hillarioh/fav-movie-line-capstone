@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   resources :lines
   resources :sessions, only: [:new,:create,:destroy]
   
-  root "sessions#new"
+  root "lines#index"
 end

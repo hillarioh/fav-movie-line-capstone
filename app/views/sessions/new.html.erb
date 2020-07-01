@@ -4,5 +4,7 @@
 <%= label_tag :username %><br><br>
 <%= text_field_tag :username %><br><br>
 </div>
-<%= submit_tag "Log In" %>
+<span><%= submit_tag "Log In" %><span>
+or<span><button><%= link_to 'Sign up',signup_path%>
+
 <% end %>

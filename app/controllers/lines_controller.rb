@@ -1,11 +1,12 @@
 class LinesController < ApplicationController
-
+  before_action :authenticate_user, only: %i[new index create]
     def  new
         @line = Line.new
     end
 
     def index
-        @lines = Line.all        
+        @lines = Line.all
+        @users = User.all        
     end
 
     def create
@@ -22,6 +23,6 @@ class LinesController < ApplicationController
    
       private
       def line_params
-        params.require(:user).permit(:username,:fullname,:author_id)
+        params.require(:line).permit(:text,:author_id)
       end
 end
