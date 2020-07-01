@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
  @import "bootstrap/scss/bootstrap";
 //  @import "./lines";
  @import "./lines.scss";
@@ -33,10 +35,15 @@
      color: white;
      min-height: 100vh;
      font-family: Pangolin-Regular;
+
+     img {
+         width: 50px;
+         height: 50px;
+     }
  }
 
  .page {
-    font-family: Helvetica, sans-serif;
+    font-family: Pangolin-Regular;
     font-size: 14px;
     font-weight: 500;
     min-height: 100vh;
