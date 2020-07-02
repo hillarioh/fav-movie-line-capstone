@@ -4,8 +4,8 @@ class User < ApplicationRecord
     has_one_attached :profile_pic
     has_one_attached :cover_pic
 
-    has_many :followings
-    has_many :followers, class_name: 'Following', foreign_key: 'follower_id'
+    has_many :followings ,class_name: 'Following', foreign_key: 'follower_id'
+    has_many :followers, class_name: 'Following',foreign_key: 'followed_id' 
 
     validates_presence_of :username
     validates_presence_of :fullname
