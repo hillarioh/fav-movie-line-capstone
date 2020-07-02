@@ -18,21 +18,19 @@
     </div>      
 </section>
  <section class="sect2  col-3 p-0">
-    <div class="tab "><h4 class="m-0">Who to follow</h4></div>
-     <div class="aside">
-        <% User.all.each do  |user|%>
-            <div class="d-flex  bg-light mb-2 p-1">
-                <div class="mr-2">
-                    <%= image_tag current_user.cover_pic ,:class=> 'img-fluid'%>
+        <div class="tab "><h4 class="m-0">Who to follow</h4></div>
+        <div class="aside">
+            <% User.all.each do  |user|%>
+                <div class="d-flex  bg-light mb-2 p-1">
+                    <div class="mr-2">
+                        <%= image_tag current_user.cover_pic ,:class=> 'img-fluid'%>
+                    </div>
+                    <div class="flex-column">
+                        <p class="font-weight-bold m-0 text-dark"><%= user.username %></p>
+                        <p class="font-weight-bold m-0 text-dark">Followed by me</p>
+                    </div>
                 </div>
-                <div class="flex-column">
-                    <p class="font-weight-bold m-0 text-dark"><%= user.username %></p>
-                    <p class="font-weight-bold m-0 text-dark">Followed by me</p>
-                </div>
-            </div>
-        <% end %>
-    </div>
+            <% end %>
+        </div>
 
-
-    </div>
 </section>
