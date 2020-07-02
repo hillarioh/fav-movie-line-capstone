@@ -11,9 +11,11 @@
     border-right: 2px solid #ccc;
     font-family: 'Pangolin-Regular';
 
+   
+
     .tab1{
         height: 250px;
-        overflow-y: hidden;
+        overflow: hidden;
         .cov{
             width: 1000px;
             height: 400px;
@@ -36,6 +38,23 @@
         }
     }
 
+    .tab3 {
+        align-items: flex-end;
+        border-bottom: 1px solid #ccc;
+      
+        .tt-lk{
+            text-decoration: none;
+            padding: 8px;
+            color: rgb(135, 141, 150);
+            font-weight: 600;
+            font-size: 20px;
+            transition: border-bottom 0.3s ease;
+            &:hover {
+                border-bottom: 3px solid rgb(81, 166, 231);
+            }
+        }
+    }
+
     .line-form {
         background: white;
         h4 {
@@ -50,4 +69,25 @@
     background: rgb(245, 246, 248);
     min-height: 100vh;
     font-family: 'Pangolin-Regular';
+
+    .picon{
+        font-size: 20px;
+        color: rgb(204, 205, 207);
+        border: 1px solid rgb(204, 205, 207);
+        border-radius: 50%;
+    }
+
+    .stat {
+        border-top: 1px solid rgb(204, 205, 207);
+        border-bottom: 1px solid rgb(204, 205, 207);
+        .stat1, .stat2 {
+            border-left: 1px solid rgb(204, 205, 207);
+        }
+    }
+
+    .prof {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
 }

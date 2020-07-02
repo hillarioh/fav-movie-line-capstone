@@ -1,4 +1,4 @@
     <div class="d-flex flex-column bg-light mb-2 p-1">
-        <p class="font-weight-bold m-0"><%= User.find(line.author_id).username %></p>
+        <p class="font-weight-bold m-0"><%=link_to User.find(line.author_id).username, user_path(line.author) %></p>
         <p class="m-0"><%= line.text %></p>
     </div>

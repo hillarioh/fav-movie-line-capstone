@@ -1,17 +1,43 @@
 <section class="sect1 col-9 p-0">
     <div class="d-flex tab1">
-        <%= image_tag current_user.cover_pic ,:class=> 'cov'%>
+        <%= image_tag @user.cover_pic ,:class=> 'cov'%>
     </div>
-    
+    <div class="d-flex tab3 justify-content-around">
+        <%= link_to 'All lines', lines_path, class: "tt-lk" %>
+        <%= link_to 'Followers', lines_path, class: "tt-lk" %>   
+        <%= link_to 'Following', lines_path, class: "tt-lk" %>         
+    </div>
     <div class="movie-lines m-3 p-3 bg-white">
-     <%= render partial: 'lines/line', collection:  @lines %>
+        <u>All User Lines</u>
+        <%= render partial: 'lines/line', collection:  Line.my_lines(@user) %>
     </div>      
 </section>
  <section class="sect2  col-3 p-0">
- <div class="d-flex tab">
-        <p> Who to follow</p>
+    <div class="d-flex align-items-center justify-content-center pt-3">
+        <i class="fas fa-plus p-2 picon"></i>
+        <%= image_tag @user.profile_pic ,:class=> 'img-fluid prof mx-3'%>
+        <i class="fas fa-cog p-2 picon"></i>
     </div>
-     <div class="aside">
+    <div class="d-flex align-items-center flex-column justify-content-center py-3">
+        <h5 class="m-0 font-weight-bold"><%= @user.fullname%></h5>
+        <h6 class="m-0"><span>@</span><%= @user.username %></h6>
+    </div>
+    <div class="stat d-flex py-1">
+        <div class="col-4 d-flex align-items-center flex-column justify-content-center">
+            <h4 class="m-0">20</h4>
+            <h6 class="m-0">Lines</h6>
+        </div>
+        <div class="col-4 stat1 d-flex align-items-center flex-column justify-content-center">
+            <h4 class="m-0">10</h4>
+            <h6 class="m-0">Followers</h6>
+        </div>
+        <div class="col-4 stat2  d-flex align-items-center flex-column justify-content-center">
+            <h4 class="m-0">20</h4>
+            <h6 class="m-0">Following</h6>
+        </div>
+    </div>
+    <div class="aside p-3">
+        <p class="m-0">Followed by</p>
         <% User.all.each do  |user|%>
             <div class="d-flex flex-column bg-light mb-2 p-1">
             <p class="font-weight-bold m-0 text-dark"><%= user.username %></p>
