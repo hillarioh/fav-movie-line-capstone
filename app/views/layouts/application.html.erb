@@ -21,37 +21,37 @@
             <aside class="col-2">
               <div class="row d-flex  align-items-center p-3 border border-dark">
                    <%= image_tag current_user.cover_pic ,:class=> 'img-fluid'%>
-                   <span class="font-weight-bold ml-2 text-muted"><%= current_user.username %></span>
+                   <span class="font-weight-bold ml-2 text-muted"><%=link_to current_user.username , edit_user_path(current_user), :class=> "link"  %></span>
               </div>
                <div class="row lkn px-2 border border-dark">
                   <div class="col-6 d-flex flex-column align-items-center justify-content-center">
-                    <p class="m-0"><%= link_to current_user.followings.count , users_path %></p>
+                    <p class="m-0"><%= link_to current_user.followings.count , users_path, :class=> "link" %></p>
                     <p class="m-0">Following</p>
                   </div>
                   <div class="col-6 d-flex flex-column align-items-center justify-content-center">
-                    <p class="m-0"><%= link_to current_user.followers.count, users_path %></p>
+                    <p class="m-0"><%= link_to current_user.followers.count, users_path, :class=> "link" %></p>
                     <p class="m-0">Followers</p>
                   </div>
                </div>
                <div class="row lkn d-flex align-items-center px-3 py-2 border border-dark">
                   <i class="fa fa-home p-2" aria-hidden="true"></i>
-                  <span><%= link_to 'Home', lines_path %> </span>
+                  <span><%= link_to 'Home', lines_path, :class=> "link" %> </span>
                </div>
                 <div class="row lkn d-flex align-items-center px-3 py-2 border border-dark">
                   <i class="fas fa-id-card p-2"></i>
-                  <span><%= link_to 'My Profile', edit_user_path(current_user) %> </span>
+                  <span><%= link_to 'My Profile', edit_user_path(current_user), :class=> "link" %> </span>
                </div>
                <div class="row lkn d-flex align-items-center px-3 py-2 border border-dark">
                   <i class="fas fa-stream p-2"></i>
-                  <span><%= link_to 'My Page', user_path(current_user) %> </span>
+                  <span><%= link_to 'My Page', user_path(current_user), :class=> "link" %> </span>
                </div>
                <div class="row lkn d-flex align-items-center px-3 py-2 border border-dark">
                   <i class="fas fa-link p-2"></i>
-                  <span><%= link_to 'Connect', users_path %> </span>
+                  <span><%= link_to 'Connect', users_path, :class=> "link" %> </span>
                </div>
                <div class="row lkn d-flex align-items-center px-3 py-2 border border-dark">
                   <i class="fas fa-sign-out-alt p-2"></i>
-                  <span><%= link_to 'Log Out', logout_path%></span>
+                  <span><%= link_to 'Log Out', logout_path, :class=> "link" %></span>
                </div>
             </aside>
 

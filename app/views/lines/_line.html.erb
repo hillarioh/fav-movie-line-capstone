@@ -4,7 +4,7 @@
                 <%= image_tag User.find(line.author_id).profile_pic ,:class=> 'prof'%>
             </div>
             <div>
-                <p class="font-weight-bold m-0"><%=link_to User.find(line.author_id).username, user_path(line.author) %></p>
+                <%=link_to User.find(line.author_id).username, user_path(line.author),  :class=> "font-weight-bold linki" %>
                 <p class="m-0"><%= line.text %></p>
                 <p class="m-0 font-weight-bold"><%= line.movie_title %></p> 
             </div>
