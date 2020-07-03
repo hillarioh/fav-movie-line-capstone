@@ -24,21 +24,36 @@
     </div>
     <div class="stat d-flex py-1">
         <div class="col-4 d-flex align-items-center flex-column justify-content-center">
-            <h4 class="m-0">20</h4>
+            <h4 class="m-0"><%= @user.lines.count %></h4>
             <h6 class="m-0">Lines</h6>
         </div>
         <div class="col-4 stat1 d-flex align-items-center flex-column justify-content-center">
-            <h4 class="m-0">10</h4>
+            <h4 class="m-0"><%= @user.followers.count%></h4>
             <h6 class="m-0">Followers</h6>
         </div>
         <div class="col-4 stat2  d-flex align-items-center flex-column justify-content-center">
-            <h4 class="m-0">20</h4>
+            <h4 class="m-0"><%= @user.followings.count %></h4>
             <h6 class="m-0">Following</h6>
         </div>
     </div>
     <div class="aside p-3">
         <p class="m-0">Followed by</p>
-        <% User.includes(:followings).where(followings: {followed_id: @user.id}).each do |user| %>
+        <% user_followers(@user.id).each do |user| %>
+            <div class="d-flex  bg-light mb-2 p-1">
+                <div class="mr-2">
+                    <%= image_tag user.profile_pic ,:class=> 'img-fluid'%>
+                </div>
+                <div class="flex-column">
+                    <p class="font-weight-bold m-0 text-dark"><%= user.fullname %></p>
+                    <p class=" m-0 text-dark">@<%= user.username %></p>
+                </div>
+            </div>
+        <% end %>
+    </div>
+
+    <div class="aside p-3">
+        <p class="m-0">Following</p>
+        <% user_followings(@user.id).each do |user| %>
             <div class="d-flex  bg-light mb-2 p-1">
                 <div class="mr-2">
                     <%= image_tag user.profile_pic ,:class=> 'img-fluid'%>

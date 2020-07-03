@@ -7,6 +7,7 @@ class User < ApplicationRecord
     has_many :followers ,class_name: 'Following', foreign_key: 'followed_id'
     has_many :followings, class_name: 'Following',foreign_key: 'follower_id' 
 
+
     validates_presence_of :username
     validates_presence_of :fullname
 end
