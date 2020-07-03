@@ -6,7 +6,8 @@
         <h4>Post Your favourite movie line</h4>
         <%= form_with model: Line.new do |f|%>
             <div class="form-group">
-                <%= f.text_area :text, autofocus: true, autocomplete: "name" , :class=>"form-control"%>
+                <%= f.text_field :movie_title, placeholder: "Movie title", :class=>"form-control mb-2" %>
+                <%= f.text_area :text, placeholder: "Enter your favourite movie line here ...", :class=>"form-control"%>
             </div>
            <div class="actions">
                 <%= f.submit "Post", :class=>"btn btn-primary" %>

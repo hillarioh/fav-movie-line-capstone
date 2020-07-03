@@ -1,4 +1,14 @@
-    <div class="d-flex flex-column bg-light mb-2 p-1">
-        <p class="font-weight-bold m-0"><%=link_to User.find(line.author_id).username, user_path(line.author) %></p>
-        <p class="m-0"><%= line.text %></p>
+    <div class="row  bg-light m-0 mb-2 p-1">
+        <div class="col-9 part d-flex align-items-center">
+            <div class="mr-2">
+                <%= image_tag User.find(line.author_id).profile_pic ,:class=> 'prof'%>
+            </div>
+            <div>
+                <p class="font-weight-bold m-0"><%=link_to User.find(line.author_id).username, user_path(line.author) %></p>
+                <p class="m-0"><%= line.text %></p>
+            </div>
+        </div>
+        <div class="col-2 ml-auto mr-1  d-flex align-items-center">
+            <p class=" m-0"><%= line.created_at.strftime("%Y-%m-%d") %></p>
+        </div>
     </div>
