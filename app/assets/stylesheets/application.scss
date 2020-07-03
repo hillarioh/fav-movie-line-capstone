@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: "Pangolin-Regular";
-  src: url("/assets/Pangolin-Regular.ttf");
+  src: url("../fonts/Pangolin-Regular.ttf");
 }
 
 body {
@@ -39,6 +39,8 @@ aside {
   color: white;
   min-height: 100vh;
   font-family: Pangolin-Regular, Arial, sans-serif;
+
+ 
 
   .lkn {
     transition: background-color 0.3s ease;
