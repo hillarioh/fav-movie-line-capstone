@@ -3,38 +3,37 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 @font-face {
-    font-family: 'Pangolin';
-    src: url("/assets/Pangolin-Regular.ttf");
+  font-family: "Pangolin";
+  src: url("/assets/Pangolin-Regular.ttf");
 }
 
-.container-fluid{
-    min-height: 100vh;
-    font-family: Pangolin;
+.container-fluid {
+  min-height: 100vh;
+  font-family: Pangolin, Arial, sans-serif;
 
-    .slink{
-        text-decoration: none;
-     color:  #213346;
-     padding: 4px 12px;
-     background: rgb(241, 238, 238);
-     border-radius: 3px;
+  .slink {
+    text-decoration: none;
+    color: #213346;
+    padding: 4px 12px;
+    background: rgb(241, 238, 238);
+    border-radius: 3px;
+  }
+
+  header {
+    background: rgb(33, 51, 70);
+    color: whitesmoke;
+
+    p {
+      font-size: 24px;
+      font-weight: 600;
     }
+  }
 
-    header {
-        background: rgb(33, 51, 70);
-        color: whitesmoke;
-        p{
-            font-size: 24px;
-            font-weight: 600;
-        }
-    }
-
-    .intro {
-        min-height: 60vh;    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  .intro {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
-}
-
-

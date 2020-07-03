@@ -13,61 +13,54 @@
  *= require_tree .
  *= require_self
  */
- @import "font-awesome-sprockets";
- @import "font-awesome";
- @import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "bootstrap/scss/bootstrap";
 //  @import "./lines";
- @import "./lines.scss";
+@import "./lines.scss";
 
- @font-face {
-    font-family: 'Pangolin-Regular';
-    src: url("/assets/Pangolin-Regular.ttf");
-    font-family: 'Manjari-Bold';
-    src: url('../fonts/Manjari-Bold.ttf');
-    font-family: 'Manjari-Regular';
-    src: url('../fonts/Manjari-Regular.ttf');
-    font-family: 'Manjari-Thin';
-    src: url('../fonts/Manjari-Thin.ttf');
- }
+@font-face {
+  font-family: "Pangolin-Regular";
+  src: url("/assets/Pangolin-Regular.ttf");
+}
 
- body{
-    background-image: linear-gradient(1200deg, #96daf5, rgb(33, 51, 70));
-    min-height: 100vh;
- }
+body {
+  background-image: linear-gradient(1200deg, #96daf5, rgb(33, 51, 70));
+  min-height: 100vh;
+}
 
- .link {
-     text-decoration: none;
-     color: #c1c1c1;
- }
+.link {
+  text-decoration: none;
+  color: #c1c1c1;
+}
 
- aside {
-     background: rgb(33, 51, 70);
-     color: white;
-     min-height: 100vh;
-     font-family: Pangolin-Regular;
+aside {
+  background: rgb(33, 51, 70);
+  color: white;
+  min-height: 100vh;
+  font-family: Pangolin-Regular, Arial, sans-serif;
 
-     .lkn {
-        transition: background-color 0.3s ease;
+  .lkn {
+    transition: background-color 0.3s ease;
 
-        &:hover {
-            background-color: rgb(81, 166, 231);
-            
-        }
-     }
-
-     img {
-         width: 50px;
-         height: 50px;
-     }
- }
-
- .page {
-    font-family: Pangolin-Regular;
-    font-size: 14px;
-    font-weight: 500;
-    min-height: 100vh;
-    .navb {
-        background: rgb(81, 166, 231);
+    &:hover {
+      background-color: rgb(81, 166, 231);
     }
- }
+  }
 
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.page {
+  font-family: Pangolin-Regular, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  min-height: 100vh;
+
+  .navb {
+    background: rgb(81, 166, 231);
+  }
+}

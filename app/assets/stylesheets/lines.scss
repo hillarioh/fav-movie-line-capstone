@@ -3,86 +3,87 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 @font-face {
-    font-family: 'Pangolin-Regular';
-    src: url('/assets/Pangolin-Regular.ttf')
- }
-
- .linki {
-    text-decoration: none;
-    color: #505d75;
-    font-size: 18px;
+  font-family: "Pangolin-Regular";
+  src: url("/assets/Pangolin-Regular.ttf");
 }
 
- .part{
-    .prof {
-        width: 50px;
-        height: 50px;
-        border-radius: 5px;
+.linki {
+  text-decoration: none;
+  color: #505d75;
+  font-size: 18px;
+}
+
+.part {
+  .prof {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+}
+
+.sect1 {
+  background: rgb(245, 246, 248);
+  border-right: 2px solid #ccc;
+  font-family: Pangolin-Regular, Arial, sans-serif;
+
+  .tab {
+    align-items: flex-end;
+    border-bottom: 1px solid #ccc;
+
+    .tt-lk {
+      text-decoration: none;
+      padding: 8px;
+      color: rgb(135, 141, 150);
+      font-weight: 600;
+      font-size: 20px;
+      border-bottom: 3px solid rgb(81, 166, 231);
     }
- }
+  }
 
-.sect1{
-    background: rgb(245, 246, 248);
-    border-right: 2px solid #ccc;
-    font-family: 'Pangolin-Regular';
+  .line-form {
+    background: white;
 
-    
-
-    .tab {
-        align-items: flex-end;
-        border-bottom: 1px solid #ccc;
-        .tt-lk{
-            text-decoration: none;
-            padding: 8px;
-            color: rgb(135, 141, 150);
-            font-weight: 600;
-            font-size: 20px;
-            border-bottom: 3px solid rgb(81, 166, 231);
-        }
+    h4 {
+      font-weight: 700;
+      font-size: 16px;
     }
-
-    .line-form {
-        background: white;
-        h4 {
-            font-weight: 700;
-            font-size: 16px;
-        }
-    }
-
+  }
 }
 
 .sect2 {
-    background: rgb(245, 246, 248);
-    min-height: 100vh;
-    font-family: 'Pangolin-Regular';
+  background: rgb(245, 246, 248);
+  min-height: 100vh;
+  font-family: Pangolin-Regular, Arial, sans-serif;
 
-    .tab {
-        border-bottom: 1px solid #ccc;
-        h4{
-            font-size: 12px;
-            font-weight: 800;
-            color: gray;
-            padding: 17.5px;            
-        }
-    }
+  .tab {
+    border-bottom: 1px solid #ccc;
 
-    img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
+    h4 {
+      font-size: 12px;
+      font-weight: 800;
+      color: gray;
+      padding: 17.5px;
     }
+  }
 
-    .add {
-        text-decoration: none;
-        font-size: medium;
-        color: rgb(204, 205, 207);
-        border: 1px solid  rgb(189, 181, 181);
-        padding: 4px 6px;
-        border-radius: 50%;
-        transition: background-color 0.3s ease;
-        &:hover {
-            background-color: rgb(81, 166, 231);
-            color: white;
-        }
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .add {
+    text-decoration: none;
+    font-size: medium;
+    color: rgb(204, 205, 207);
+    border: 1px solid rgb(189, 181, 181);
+    padding: 4px 6px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgb(81, 166, 231);
+      color: white;
     }
+  }
 }
