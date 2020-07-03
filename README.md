@@ -8,6 +8,9 @@
 ## Screenshot 
 ![screenshot](./app/assets/images/screenshoot.png)
 
+## Presentation
+[Video presentation](https://www.loom.com/share/3f34ddfa78db420d806ff92fe31bd9c5)
+
 ## Models created
 - User
 - Line
