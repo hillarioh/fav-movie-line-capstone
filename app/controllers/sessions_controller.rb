@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       redirect_to lines_path
     else
       flash[:error] = 'username invalid'
-      render 'new'
+      redirect_to login_path
     end
   end
 
