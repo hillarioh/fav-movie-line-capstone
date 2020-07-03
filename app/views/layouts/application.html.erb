@@ -25,11 +25,11 @@
               </div>
                <div class="row lkn px-2 border border-dark">
                   <div class="col-6 d-flex flex-column align-items-center justify-content-center">
-                    <p class="m-0"><%= link_to '10', users_path %></p>
+                    <p class="m-0"><%= link_to current_user.followings.count , users_path %></p>
                     <p class="m-0">Following</p>
                   </div>
                   <div class="col-6 d-flex flex-column align-items-center justify-content-center">
-                    <p class="m-0"><%= link_to '12', users_path %></p>
+                    <p class="m-0"><%= link_to current_user.followers.count, users_path %></p>
                     <p class="m-0">Followers</p>
                   </div>
                </div>
