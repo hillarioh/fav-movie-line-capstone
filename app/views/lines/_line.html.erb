@@ -6,6 +6,7 @@
             <div>
                 <p class="font-weight-bold m-0"><%=link_to User.find(line.author_id).username, user_path(line.author) %></p>
                 <p class="m-0"><%= line.text %></p>
+                <p class="m-0 font-weight-bold"><%= line.movie_title %></p> 
             </div>
         </div>
         <div class="col-2 ml-auto mr-1  d-flex align-items-center">

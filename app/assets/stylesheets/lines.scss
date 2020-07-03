@@ -65,4 +65,18 @@
         height: 50px;
         border-radius: 50%;
     }
+
+    .add {
+        text-decoration: none;
+        font-size: medium;
+        color: rgb(204, 205, 207);
+        border: 1px solid  rgb(189, 181, 181);
+        padding: 4px 6px;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+        &:hover {
+            background-color: rgb(81, 166, 231);
+            color: white;
+        }
+    }
 }

@@ -23,6 +23,6 @@ class LinesController < ApplicationController
    
       private
       def line_params
-        params.require(:line).permit(:text,:author_id)
+        params.require(:line).permit(:text,:author_id,:movie_title)
       end
 end
