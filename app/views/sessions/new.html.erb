@@ -1,10 +1,18 @@
-<h1>Login</h1>
-<%= form_tag sessions_path do %>
-<div class="form-group">
-<%= label_tag :username %><br><br>
-<%= text_field_tag :username %><br><br>
-</div>
-<span><%= submit_tag "Log In" %><span>
-or<span><button><%= link_to 'Sign up',signup_path%>
+<div class="container-fluid p-0">
+    <header class="d-flex justify-content-between align-items-center p-2">
+        <p class="m-0">Favourite Movie lines</p>
+        <%= button_to 'Sign Up', signup_path %>
+    </header>
 
-<% end %>
+    <div class="intro">
+        <h1>Welcome</h1>
+        <%= form_tag sessions_path do %>
+            <div class="form-group">
+                <%= label_tag :username %><br><br>
+                <%= text_field_tag :username %><br><br>
+            </div>
+            <span><%= submit_tag "Log In" %><span>
+            or<span><button><%= link_to 'Sign up',signup_path%>
+        <% end %>
+    </div>
+</div>

@@ -30,6 +30,11 @@
     src: url('../fonts/Manjari-Thin.ttf');
  }
 
+ body{
+    background-image: linear-gradient(1200deg, #96daf5, rgb(33, 51, 70));
+    min-height: 100vh;
+ }
+
  .link {
      text-decoration: none;
      color: #c1c1c1;
