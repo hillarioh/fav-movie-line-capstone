@@ -11,6 +11,10 @@
   text-decoration: none;
   color: #505d75;
   font-size: 18px;
+
+  &:hover {
+    color: rgb(173, 166, 166);
+  }
 }
 
 .part {
@@ -55,6 +59,14 @@
   min-height: 100vh;
   font-family: Pangolin-Regular, Arial, sans-serif;
 
+  .rlink {
+    color: rgb(33, 51, 70);
+
+    &:hover {
+      color: rgb(173, 166, 166);
+    }
+  }
+
   .tab {
     border-bottom: 1px solid #ccc;
 
@@ -82,7 +94,7 @@
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: rgb(81, 166, 231);
+      background-color: rgb(240, 242, 243);
       color: white;
     }
   }

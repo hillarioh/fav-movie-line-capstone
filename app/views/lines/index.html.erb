@@ -27,7 +27,7 @@
                         <%= image_tag user.cover_pic ,:class=> 'img-fluid'%>
                     </div>
                     <div class="flex-column">
-                        <p class="font-weight-bold m-0 text-dark"><%= user.fullname %></p>
+                        <p class="font-weight-bold m-0 text-dark"><%= link_to user.fullname, user_path(user),:class=>"rlink" %></p>
                         <p class=" m-0">@<%= user.username %></p>
                     </div>
                     <div class="ml-auto mr-2">

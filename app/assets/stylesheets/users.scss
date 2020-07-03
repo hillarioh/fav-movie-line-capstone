@@ -12,6 +12,10 @@
   color: #505d75;
 }
 
+.major {
+  background: rgb(245, 246, 248);
+}
+
 .hlink {
   text-decoration: none;
   color: #213346;
@@ -59,10 +63,30 @@
 }
 
 .sect {
+  background: rgb(245, 246, 248);
+  border-right: 1px solid rgb(131, 129, 129);
+
+  h3 {
+    text-decoration: underline;
+  }
   .prof {
     width: 70px;
     height: 70px;
     border-radius: 50%;
+  }
+
+  .ulink {
+    text-decoration: none;
+    color: #2b3b58;
+
+    &:hover{
+      color: #505d75;
+    }
+  }
+
+  .uslink {
+    text-decoration: none;
+    color: #505d75;
   }
 
   .add {
