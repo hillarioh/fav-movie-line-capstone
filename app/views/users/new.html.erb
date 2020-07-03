@@ -1,12 +1,26 @@
-<h1>Sign Up</h1>
-<%= form_for @user do |f|%>
-  <%= f.label :username%><br><br>
-  <%= f.text_field :username%><br><br>
-   <%= f.label :fullname%><br><br>
-  <%= f.text_field :fullname%><br><br>
-  <%= f.label  'Profile picture'%><br><br>
-  <%= f.file_field :profile_pic %><br><br>
-  <%= f.label  'Cover picture'%><br><br>
-   <%= f.file_field :cover_pic %><br><br>
-  <%= f.submit %>
-<%end%>
+<div class="container-fluid d-flex flex-column p-0">
+    <header class="d-flex justify-content-between align-items-center p-2">
+        <p class="m-0">Favourite Movie lines</p>
+        <%= link_to 'Log In', login_path, :class=>"hlink" %>
+    </header>
+
+    <div class="intro  w-50 m-auto">
+        <h1>Welcome</h1>
+
+        <%= form_for @user do |f| %>
+         <div class="form-group">
+            <%= f.label :username %><br>
+            <%= f.text_field :username , :class=>"form-control"%><br>
+            <%= f.label :fullname%><br>
+            <%= f.text_field :fullname , :class=>"form-control"%><br>
+            <%= f.label  'Profile picture' %><br>
+            <%= f.file_field :profile_pic , :class=>"mb-2" %><br>
+            <%= f.label  'Cover picture'%><br>
+            <%= f.file_field :cover_pic , :class=>"" %><br>
+          </div>
+
+               <%= f.submit "Create account", :class=>"btn btn-primary mb-3" %>
+        <% end %>
+    </div>
+</div>
+

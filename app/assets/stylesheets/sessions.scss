@@ -9,8 +9,15 @@
 
 .container-fluid{
     min-height: 100vh;
-
     font-family: Pangolin;
+
+    .slink{
+        text-decoration: none;
+     color:  #213346;
+     padding: 4px 12px;
+     background: rgb(241, 238, 238);
+     border-radius: 3px;
+    }
 
     header {
         background: rgb(33, 51, 70);
