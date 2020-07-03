@@ -54,20 +54,6 @@ Setup active storage with:
     rpsec --format documentation
 ```
 
-> Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
-
-
-
-## Screenshot
-
-![screenshot](app/assets/images/screenshot.png)
-
-## How to run test cases
-
-Type next command to run unit tests.
-
-    rspec spec/models
-
 ## Author
 
 - Github: [@hillarioh](https://github.com/hillarioh)
