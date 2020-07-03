@@ -5,7 +5,7 @@ class LinesController < ApplicationController
     end
 
     def index
-        @lines = Line.all
+        @lines = Line.ordered_by_most_recent
         @users = User.all        
     end
 

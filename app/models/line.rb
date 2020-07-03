@@ -4,4 +4,5 @@ class Line < ApplicationRecord
   validates_presence_of :text
 
   scope :my_lines, ->(c) { where(author: c) }
+  scope :ordered_by_most_recent, -> { order(created_at: :desc) }
 end
