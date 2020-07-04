@@ -8,4 +8,6 @@ class User < ApplicationRecord
 
   validates_presence_of :username
   validates_presence_of :fullname
+  validates_presence_of :profile_pic
+  validates_presence_of :cover_pic
 end
