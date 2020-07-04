@@ -24,7 +24,7 @@
             <% list_to_follow.each do  |user|%>
                 <div class="d-flex  align-items-center bg-light mb-2 p-1">
                     <div class="mr-2">
-                        <%= image_tag user.cover_pic ,:class=>"img-fluid"%>
+                        <%= image_tag user.cover_pic if user.cover_pic.attached? %>
                     </div>
                     <div class="flex-column">
                         <p class="font-weight-bold m-0 text-dark"><%= link_to user.fullname, user_path(user),:class=>"rlink" %></p>
