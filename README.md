@@ -3,7 +3,7 @@
 > This is a a ruby on rails capstone project  that entails posting of favourite movie lines and following other users. It captures basic functionalities of social site.
 
 ## Live link
-[live](https://pure-wildwood-62557.herokuapp.com/login)
+[live](https://calm-chamber-39005.herokuapp.com/login)
 
 ## Screenshot 
 ![screenshot](./app/assets/images/screenshoot.png)
@@ -41,8 +41,7 @@ Setup active storage with:
 
 ### Usage
 
-1. Create an account by filling in all details and uploading profile and cover photo. The user is not
-strictly required to upload a photo as their is a default image and update can be made later.
+1. Create an account by filling in all details and uploading profile and cover photo. 
 2. In the home page it has navigation links to various pages in the site. It contains details about count of your followers and the those you follow and the profile picture.
 3. To edit profile you can visit your My profile and edit photo or other user details.
 4. Creating a line is simple, in the home page one can create a line and post it. The most recent post will appear at the top.
