@@ -3,9 +3,9 @@
 <h1>My Profile</h1>
 <%= form_for @user do |f|%>
   <%= f.label :username%><br><br>
-  <%= f.text_field :username%><br><br>
+  <%= f.text_field :username, :required => true%><br><br>
    <%= f.label :fullname%><br><br>
-  <%= f.text_field :fullname%><br><br>
+  <%= f.text_field :fullname, :required => true%><br><br>
   <%= f.label  'Profile picture'%><br><br>
   <%= f.file_field :profile_pic %><br><br>
   <%= f.label  'Cover picture'%><br><br>

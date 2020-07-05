@@ -25,9 +25,9 @@
 
          <div class="form-group">
             <%= f.label :username %><br>
-            <%= f.text_field :username , :class=>"form-control"%><br>
+            <%= f.text_field :username ,:required => true, :class=>"form-control"%><br>
             <%= f.label :fullname%><br>
-            <%= f.text_field :fullname , :class=>"form-control"%><br>
+            <%= f.text_field :fullname ,:required => true, :class=>"form-control"%><br>
             <%= f.label  'Profile picture' %><br>
             <%= f.file_field :profile_pic , :class=>"mb-2" %><br>
             <%= f.label  'Cover picture'%><br>
