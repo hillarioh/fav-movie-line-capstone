@@ -9,7 +9,7 @@
 ![screenshot](./app/assets/images/screenshoot.png)
 
 ## Presentation
-[Video presentation](https://www.loom.com/share/3f34ddfa78db420d806ff92fe31bd9c5)
+[Video presentation](https://www.loom.com/share/b8fd8339ecd54a74ba16fa4bd6ed06f7)
 
 ## Models created
 - User
@@ -41,7 +41,7 @@ Setup active storage with:
 
 ### Usage
 
-1. Create an account by filling in all details and uploading profile and cover photo. 
+1. Create an account by filling in all details. The username and fullnames are required while uploading  of profile and cover photo is optional as a default image will be placed which can be editted later.
 2. In the home page it has navigation links to various pages in the site. It contains details about count of your followers and the those you follow and the profile picture.
 3. To edit profile you can visit your My profile and edit photo or other user details.
 4. Creating a line is simple, in the home page one can create a line and post it. The most recent post will appear at the top.

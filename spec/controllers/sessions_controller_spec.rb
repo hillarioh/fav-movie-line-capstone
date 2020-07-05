@@ -3,7 +3,7 @@ require 'capybara/rspec'
 
 RSpec.describe 'Sessions controller', type: :feature do
   before :each do
-    m = User.new(username:'niiazaly',fullname: 'niiazaly')
+    m = User.new(username: 'niiazaly', fullname: 'niiazaly')
     m.save
     d = User.new(username: 'okerioh', fullname: 'okerioh')
     d.save
@@ -11,7 +11,7 @@ RSpec.describe 'Sessions controller', type: :feature do
     within('form') do
       fill_in 'username', with: 'okerioh'
     end
-    click_button "Log In"
+    click_button 'Log In'
   end
   it 'shows all lines posted' do
     visit '/lines'
