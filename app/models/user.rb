@@ -26,7 +26,7 @@ class User < ApplicationRecord
   def add_default_cover
     return cover_pic.attached?
 
-    file = File.open(Rails.root.join('app', 'assets', 'images', 'default-cover2.jpg'))
-    cover_pic.attach(io: file, filename: 'default-cover2.jpg', content_type: 'image/jpg')
+    filed = File.open(Rails.root.join('app', 'assets', 'images', 'default-cover2.jpg'))
+    cover_pic.attach(io: filed, filename: 'default-cover2.jpg', content_type: 'image/jpg')
   end
 end

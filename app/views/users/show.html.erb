@@ -1,6 +1,6 @@
 <section class="sect1 col-9 p-0">
     <div class="d-flex tab1">
-        <%= image_tag @user.cover_pic ,:class=> 'cov'%>
+        <%= image_tag ( @user.cover_pic.attached? ? @user.cover_pic : 'default-cover2.jpg' ),:class=> 'cov'%>
     </div>
     <div class="d-flex tab3 ">
         <%= link_to 'All lines', lines_path, class: "tt-lk ml-2" %>      
