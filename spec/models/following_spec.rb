@@ -11,7 +11,7 @@ RSpec.describe Following, type: :model do
     end
 
     it 'is not valid without a fullname' do
-      expect(User.new(follower: nil)).to_not be_valid
+      expect(Following.new(follower: nil)).to_not be_valid
     end
   end
 end

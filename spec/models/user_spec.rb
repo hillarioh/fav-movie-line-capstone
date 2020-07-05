@@ -13,5 +13,13 @@ RSpec.describe User, type: :model do
     it 'is not valid without a fullname' do
       expect(User.new(fullname: nil)).to_not be_valid
     end
+
+    it 'is not valid without a profile pic' do
+      expect(User.new(profile_pic: nil)).to_not be_valid
+    end
+
+    it 'is not valid without a cover pic' do
+      expect(User.new(cover_pic: nil)).to_not be_valid
+    end
   end
 end
