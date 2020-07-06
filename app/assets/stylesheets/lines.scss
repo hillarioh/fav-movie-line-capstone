@@ -1,0 +1,101 @@
+// Place all the styles related to the Lines controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@font-face {
+  font-family: "Pangolin-Regular";
+  src: url("/assets/Pangolin-Regular.ttf");
+}
+
+.linki {
+  text-decoration: none;
+  color: #505d75;
+  font-size: 18px;
+
+  &:hover {
+    color: rgb(173, 166, 166);
+  }
+}
+
+.part {
+  .prof {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+}
+
+.sect1 {
+  background: rgb(245, 246, 248);
+  border-right: 2px solid #ccc;
+  font-family: Pangolin-Regular, Arial, sans-serif;
+
+  .tab {
+    align-items: flex-end;
+    border-bottom: 1px solid #ccc;
+
+    .tt-lk {
+      text-decoration: none;
+      padding: 8px;
+      color: rgb(135, 141, 150);
+      font-weight: 600;
+      font-size: 20px;
+      border-bottom: 3px solid rgb(81, 166, 231);
+    }
+  }
+
+  .line-form {
+    background: white;
+
+    h4 {
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+}
+
+.sect2 {
+  background: rgb(245, 246, 248);
+  min-height: 100vh;
+  font-family: Pangolin-Regular, Arial, sans-serif;
+
+  .rlink {
+    color: rgb(33, 51, 70);
+
+    &:hover {
+      color: rgb(173, 166, 166);
+    }
+  }
+
+  .tab {
+    border-bottom: 1px solid #ccc;
+
+    h4 {
+      font-size: 12px;
+      font-weight: 800;
+      color: gray;
+      padding: 17.5px;
+    }
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .add {
+    text-decoration: none;
+    font-size: medium;
+    color: rgb(204, 205, 207);
+    border: 1px solid rgb(189, 181, 181);
+    padding: 4px 6px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgb(240, 242, 243);
+      color: white;
+    }
+  }
+}

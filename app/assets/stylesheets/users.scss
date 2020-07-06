@@ -1,0 +1,164 @@
+// Place all the styles related to the Lines controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@font-face {
+  font-family: "Pangolin-Regular";
+  src: url("/assets/Pangolin-Regular.ttf");
+}
+
+.link {
+  text-decoration: none;
+  color: #505d75;
+}
+
+.major {
+  background: rgb(245, 246, 248);
+}
+
+.hlink {
+  text-decoration: none;
+  color: #213346;
+  padding: 4px 12px;
+  background: rgb(241, 238, 238);
+  border-radius: 3px;
+}
+
+.sect2 {
+  background: rgb(245, 246, 248);
+  min-height: 100vh;
+  font-family: Pangolin-Regular, Arial, sans-serif;
+
+  .picon {
+    font-size: 20px;
+    color: rgb(204, 205, 207);
+    border: 1px solid rgb(204, 205, 207);
+    border-radius: 50%;
+  }
+
+  .stat {
+    border-top: 1px solid rgb(204, 205, 207);
+    border-bottom: 1px solid rgb(204, 205, 207);
+
+    .stat1,
+    .stat2 {
+      border-left: 1px solid rgb(204, 205, 207);
+    }
+  }
+
+  .prof {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  .add {
+    text-decoration: none;
+    font-size: medium;
+    color: rgb(204, 205, 207);
+    border: 1px solid rgb(189, 181, 181);
+    padding: 4px 6px;
+    border-radius: 50%;
+  }
+}
+
+.sect {
+  background: rgb(245, 246, 248);
+  border-right: 1px solid rgb(131, 129, 129);
+
+  h3 {
+    text-decoration: underline;
+  }
+
+  .prof {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+
+  .ulink {
+    text-decoration: none;
+    color: #2b3b58;
+
+    &:hover {
+      color: #505d75;
+    }
+  }
+
+  .uslink {
+    text-decoration: none;
+    color: #505d75;
+  }
+
+  .add {
+    text-decoration: none;
+    font-size: medium;
+    color: rgb(204, 205, 207);
+    border: 1px solid rgb(189, 181, 181);
+    padding: 4px 6px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgb(81, 166, 231);
+      color: white;
+    }
+  }
+}
+
+.sect1 {
+  background: rgb(245, 246, 248);
+  border-right: 2px solid #ccc;
+  font-family: Pangolin-Regular, Arial, sans-serif;
+
+  .tab1 {
+    height: 250px;
+    overflow: hidden;
+
+    .cov {
+      width: 1000px;
+      height: 400px;
+    }
+  }
+
+  .tab {
+    align-items: flex-end;
+    border-bottom: 1px solid #ccc;
+
+    .tt-lk {
+      text-decoration: none;
+      padding: 8px;
+      color: rgb(135, 141, 150);
+      font-weight: 600;
+      font-size: 20px;
+      border-bottom: 3px solid rgb(81, 166, 231);
+    }
+  }
+
+  .tab3 {
+    align-items: flex-end;
+    border-bottom: 1px solid #ccc;
+
+    .tt-lk {
+      text-decoration: none;
+      padding: 8px;
+      color: rgb(135, 141, 150);
+      font-weight: 600;
+      font-size: 20px;
+      transition: border-bottom 0.3s ease;
+
+      &:hover {
+        border-bottom: 3px solid rgb(81, 166, 231);
+      }
+    }
+  }
+
+  .line-form {
+    background: white;
+
+    h4 {
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+}
