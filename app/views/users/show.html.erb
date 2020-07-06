@@ -1,0 +1,69 @@
+<section class="sect1 col-9 p-0">
+    <div class="d-flex tab1">
+        <%= image_tag ( @user.cover_pic.attached? ? @user.cover_pic : 'default-cover2.jpg' ),:class=> 'cov'%>
+    </div>
+    <div class="d-flex tab3 ">
+        <%= link_to 'All lines', lines_path, class: "tt-lk ml-2" %>      
+    </div>
+    <div class="movie-lines m-3 p-3 bg-white">
+        <u>All User Lines</u>
+        <%= render partial: 'lines/line', collection:  Line.my_lines(@user) %>
+    </div>      
+</section>
+ <section class="sect2  col-3 p-0">
+    <div class="d-flex align-items-center justify-content-center pt-3">
+        <i class="fas fa-plus p-2 picon"></i>
+        <%= image_tag @user.profile_pic ,:class=> 'img-fluid prof mx-3'%>
+        <i class="fas fa-cog p-2 picon"></i>
+    </div>
+    <div class="d-flex align-items-center flex-column justify-content-center py-3">
+        <h5 class="m-0 font-weight-bold"><%= @user.fullname%></h5>
+        <h6 class="m-0"><span>@</span><%= @user.username %></h6>
+    </div>
+    <div class="stat d-flex py-1">
+        <div class="col-4 d-flex align-items-center flex-column justify-content-center">
+            <h4 class="m-0"><%= @user.lines.count %></h4>
+            <h6 class="m-0">Lines</h6>
+        </div>
+        <div class="col-4 stat1 d-flex align-items-center flex-column justify-content-center">
+            <h4 class="m-0"><%= @user.followers.count%></h4>
+            <h6 class="m-0">Followers</h6>
+        </div>
+        <div class="col-4 stat2  d-flex align-items-center flex-column justify-content-center">
+            <h4 class="m-0"><%= @user.followings.count %></h4>
+            <h6 class="m-0">Following</h6>
+        </div>
+    </div>
+    <div class="aside p-3">
+        <p class="m-0">Followed by</p>
+        <% user_followers(@user.id).each do |user| %>
+            <div class="d-flex  bg-light mb-2 p-1">
+                <div class="mr-2">
+                    <%= image_tag user.profile_pic ,:class=> 'img-fluid'%>
+                </div>
+                <div class="flex-column">
+                    <p class="font-weight-bold m-0 text-dark"><%= user.fullname %></p>
+                    <p class=" m-0 text-dark">@<%= user.username %></p>
+                </div>
+            </div>
+        <% end %>
+    </div>
+
+    <div class="aside p-3">
+        <p class="m-0">Following</p>
+        <% user_followings(@user.id).each do |user| %>
+            <div class="d-flex  bg-light mb-2 p-1">
+                <div class="mr-2">
+                    <%= image_tag user.profile_pic ,:class=> 'img-fluid'%>
+                </div>
+                <div class="flex-column">
+                    <p class="font-weight-bold m-0 text-dark"><%= user.fullname %></p>
+                    <p class=" m-0 text-dark">@<%= user.username %></p>
+                </div>
+            </div>
+        <% end %>
+    </div>
+
+
+    </div>
+</section>
