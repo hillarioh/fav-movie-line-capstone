@@ -3,7 +3,7 @@
 > This is a a ruby on rails capstone project  that entails posting of favourite movie lines and following other users. It captures basic functionalities of social site.
 
 ## Live link
-[live](https://calm-chamber-39005.herokuapp.com/login)
+[live](https://vast-hollows-24056.herokuapp.com/login)
 
 ## Screenshot 
 ![screenshot](./app/assets/images/screenshoot.png)
